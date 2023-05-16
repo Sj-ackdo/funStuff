@@ -1,4 +1,4 @@
-#a way of determining the minimum amount of moves depending on n = disks.
+# A way of determining the minimum amount of moves depending on n = disks.
 # 2^n - 1 = min amount of moves
 # Fun fact: This formula is exactly the same as Mersenne's number 
 
