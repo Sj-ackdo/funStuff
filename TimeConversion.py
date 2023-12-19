@@ -10,7 +10,7 @@ print(" |_   _|(_) _ __ ___    ___    ___  ___   _ __ __   __ ___  _ __  ___ (_)
 print("   | |  | || '_ ` _ \  / _ \  / __|/ _ \ | '_ \\ \ / // _ \| '__|/ __|| | / _ \ | '_ \ ")
 print("   | |  | || | | | | ||  __/ | (__| (_) || | | |\ V /|  __/| |   \__ \| || (_) || | | |")
 print("   |_|  |_||_| |_| |_| \___|  \___|\___/ |_| |_| \_/  \___||_|   |___/|_| \___/ |_| |_|\n")
-print("### Written by Sj-ackdo, written with an unnecessary amount of lines ###\n")
+print("### Written by Sj-ackdo, with an unnecessary amount of lines ###\n")
 
 
 
