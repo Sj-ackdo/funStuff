@@ -1,14 +1,13 @@
-import argparse
+from optparse import OptionParser
 import os
 import shutil
+import argparse
 
 parser = argparse.ArgumentParser()
-group = parser.add_mutually_exclusive_group()
-group.add_argument("--verbose", "-v", help="increase output verbosity",
-                    action="store_true")
-parser.add_argument("path", type=str, help="input directory")
-parser.add_argument("outputDir", type=str, help="output directory")
-parser.add_argument("num", type=str, help="Extension type: 1. jpg - 2. png -  3. jpg & png")
+parser.add_argument("--verbose", "-v", help="increase output verbosity", action="store_true", default=False)
+parser.add_argument("-i", "--input", action="store", type=str, dest="path", help="input directory", default=False)
+parser.add_argument("-o", "--output", action="store", type=str, dest="outputDir", help="output directory", default=False)
+parser.add_argument("-x", "--extension", action="store", type=str, dest="num", help="Extension type: 1. jpg - 2. png -  3. jpg & png", default=False)
 args = parser.parse_args()
 
 def fileExtension(num):
@@ -61,10 +60,7 @@ class checkFile:
         else:
             print("\nCompleted...\n")
 
-
-
-
-print(" _____ _ _        ____             _   _             ")
+print(" _____ _ _         ____             _   _             ")
 print("|  ___(_) | ___   / ___|  ___  _ __| |_(_)_ __   __ _ ")
 print("| |_  | | |/ _ \  \___ \ / _ \| '__| __| | '_ \ / _` |")
 print("|  _| | | |  __/   ___) | (_) | |  | |_| | | | | (_| |")
