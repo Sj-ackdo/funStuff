@@ -1,5 +1,4 @@
 import hashlib
-import keyboard
 
 def algType(num):
     switch={
@@ -32,16 +31,12 @@ match comAlg:
             num = input("What Algorithm?\n")     
         input = input("Input:\n")
         algCalculate.algorithmChoice(num, input)
-        keyboard.wait("enter")
     case "compare":
         hash1 = input("hash1:\n")
         hash2 = input("hash2\n")
         if hash1 == hash2:
             print("-----------------------\n", "hash 1 & 2 are the same")
-            keyboard.wait("enter")
         else:
             print("----------!!!----------\n", "these hashes are not the same!")
-            keyboard.wait("enter")
     case _:
         print("Invalid answer, retry\n")
-        keyboard.wait("enter")
